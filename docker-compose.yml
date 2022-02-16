@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  spacy:
+    build: .
+    command: uvicorn spacy_context:app --host 0.0.0.0
+    ports:
+      - 8000:8000
